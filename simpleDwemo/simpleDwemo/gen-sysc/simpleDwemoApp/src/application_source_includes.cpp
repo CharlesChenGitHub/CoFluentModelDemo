@@ -1,0 +1,6 @@
+#include "cfm_producer.cpp"
+#include "cfm_consumer.cpp"
+#include "cfm_simpledwemoapp_top.cpp"
+#include "cfm_simpledwemoapp_global.cpp"
+#include "cfm_simpledwemoapp.cpp"
+#include "cfm_simpledwemoapp_user.cpp"

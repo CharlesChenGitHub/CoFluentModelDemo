@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup>
+    <ClCompile Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\src\application_source_includes.cpp">
+    	<Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_consumer.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_producer.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global_types.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_top.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_user.h">
+    	<Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{60c1a1bf-1d4b-41be-abbe-09e284f0dd72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6dba0ba4-0620-4e41-a5a9-48df2cd9ab1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

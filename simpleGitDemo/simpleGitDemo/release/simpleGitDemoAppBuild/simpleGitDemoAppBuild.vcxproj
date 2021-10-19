@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Intel(R) CoFluent(TM) Studio - Intel Corporation
+C++ Modeling Library for SystemC/TLM2 (SCL)
+-->
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{246C64EF-05F0-40D9-8C47-AA86E88BD5EC}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">simpleGitDemoApp</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">simpleGitDemoApp</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/W3 /GR /Zm200 /vmg /TP /Gy  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>"_CONSOLE";WIN32="WIN32";_CRT_SECURE_NO_WARNINGS=_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=_CRT_SECURE_NO_DEPRECATE;BOOST_AUTO_LINK_TAGGED=BOOST_AUTO_LINK_TAGGED;COFS_MODEL_TYPE_APPLICATION_MODELING=COFS_MODEL_TYPE_APPLICATION_MODELING;COFS_SOURCE_CODEGEN_SYSTEMC=COFS_SOURCE_CODEGEN_SYSTEMC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>"4267";"4334";%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 /ignore:4204  %(AdditionalOptions)</AdditionalOptions> 
+      <AdditionalDependencies>systemc.lib;cofscl.lib;libcpmt.lib;libcmt.lib;oldnames.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;netapi32.lib;comctl32.lib;ws2_32.lib;wsock32.lib;rpcrt4.lib;wbemuuid.lib;wintrust.lib;crypt32.lib;psapi.lib;Shlwapi.lib;dhcpcsvc.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.accellera_8.1.0.52\lib\msvc-16.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/W3 /GR /Zm200 /vmg /TP /Gy  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>"_CONSOLE";WIN32="WIN32";_CRT_SECURE_NO_WARNINGS=_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=_CRT_SECURE_NO_DEPRECATE;BOOST_AUTO_LINK_TAGGED=BOOST_AUTO_LINK_TAGGED;COFS_MODEL_TYPE_APPLICATION_MODELING=COFS_MODEL_TYPE_APPLICATION_MODELING;COFS_SOURCE_CODEGEN_SYSTEMC=COFS_SOURCE_CODEGEN_SYSTEMC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>"4267";"4334";%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+	  <BufferSecurityCheck>false</BufferSecurityCheck>
+	  <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 /ignore:4204  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>systemc.lib;cofscl.lib;libcpmt.lib;libcmt.lib;oldnames.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;netapi32.lib;comctl32.lib;ws2_32.lib;wsock32.lib;rpcrt4.lib;wbemuuid.lib;wintrust.lib;crypt32.lib;psapi.lib;Shlwapi.lib;dhcpcsvc.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.accellera_8.1.0.52\lib\msvc-16.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\src\application_source_includes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_consumer.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_producer.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global_types.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_top.h" />
+    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_user.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
+

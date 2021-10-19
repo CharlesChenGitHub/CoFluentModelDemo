@@ -1,0 +1,16 @@
+[INFO]  ================================================================================
+[INFO]          Intel(R) CoFluent(TM) Studio - Intel Corporation
+[INFO]      C++ Modeling Library for SystemC/TLM2 (SCL) version 8.1.0-r1 (release)
+[INFO]  --------------------------------------------------------------------------------
+[INFO]                      Tue Oct 19 10:33:27 2021
+[INFO]  ================================================================================
+[INFO]  
+[INFO]  0 ns:{pre-elaboration}> Simulation context: simulator = <C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\release\simpleGitDemoAppBuild\simpleGitDemoApp.exe>
+[INFO]  0 ns:{pre-elaboration}> Simulation context: default path = <C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\release\simpleGitDemoAppBuild>
+[INFO]  0 ns:{pre-elaboration}> License check OK
+[INFO]  0 ns:{post-elaboration}> parsing design parameter's values input file <C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\release\simpleGitDemoAppBuild\cofs_dp.csv>
+[INFO]  0 ns:{post-elaboration}> Monitoring manager:  parsing monitoring configuration input file <C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\release\simpleGitDemoAppBuild\cofs_mon_probes.csv>
+[INFO]  1000 ns:/> Reached the specified simulation duration:
+[INFO]  1000 ns:/>   current simulated time:     1000 ns
+[INFO]  1000 ns:/>   host system clock duration: 0 s
+[INFO]  1000 ns:/>   transaction count:          179

@@ -1,0 +1,4 @@
+component_name,component_type,probe_configuration
+/simpleGitDemoApp/Producer,FUNCTION,MON_STATE_ONLY
+/simpleGitDemoApp/MsgQ,MESSAGE_QUEUE,MON_STATE_ONLY
+/simpleGitDemoApp/Consumer,FUNCTION,MON_STATE_ONLY

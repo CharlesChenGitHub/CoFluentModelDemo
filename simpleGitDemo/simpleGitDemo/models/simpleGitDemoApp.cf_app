@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cofluent:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cofluent="http://cofluent.intel.com/cofluent/1.0.0" xmi:id="_zwKNMDCEEey7T5h0h40U1Q" name="simpleGitDemoApp" version="8.1.0_r1_nolic_52" target="" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" cyclePeriod="10 ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+  <annotations xmi:id="_zw8QUDCEEey7T5h0h40U1Q" source="cdt.configurations">
+    <details xmi:id="_zw8QUTCEEey7T5h0h40U1Q" key="cofluent.managedbuild.config.msvc2019.exe.release.1485604409" value="cdt.configuration.active"/>
+  </annotations>
+  <refinement xsi:type="cofluent:Structure" xmi:id="_zwKNMTCEEey7T5h0h40U1Q" name="simpleGitDemoAppSt">
+    <models xsi:type="cofluent:Function" xmi:id="_03qAwDCEEey7T5h0h40U1Q" name="Producer" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+      <ports xmi:id="_2L7FADCEEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="OUT" outputActions="_03trJDCEEey7T5h0h40U1Q" relations="_1u6_8DCEEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <refinement xsi:type="cofluent:Behavior" xmi:id="_03trIDCEEey7T5h0h40U1Q" name="ProducerBh" firstStatement="_03trITCEEey7T5h0h40U1Q">
+        <statements xsi:type="cofluent:Operation" xmi:id="_03trITCEEey7T5h0h40U1Q" name="init" isFirstOf="_03trIDCEEey7T5h0h40U1Q" next="_03trIjCEEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:LoopStatement" xmi:id="_03trIjCEEey7T5h0h40U1Q" name="Loop" firstStatement="_03trIzCEEey7T5h0h40U1Q" lastStatement="_03trJDCEEey7T5h0h40U1Q" previous="_03trITCEEey7T5h0h40U1Q" condition=""/>
+        <statements xsi:type="cofluent:Operation" xmi:id="_03trIzCEEey7T5h0h40U1Q" name="produce" isFirstOf="_03trIjCEEey7T5h0h40U1Q" next="_03trJDCEEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:OutputAction" xmi:id="_03trJDCEEey7T5h0h40U1Q" name="OutAction" isLastOf="_03trIjCEEey7T5h0h40U1Q" previous="_03trIzCEEey7T5h0h40U1Q" port="_2L7FADCEEey7T5h0h40U1Q" duration=" ns" condition="" priority="" vectorSize="" blocking="true" call=""/>
+      </refinement>
+    </models>
+    <models xsi:type="cofluent:Function" xmi:id="_1Y7h0DCEEey7T5h0h40U1Q" name="Consumer" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+      <ports xmi:id="_2cqPsDCEEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="IN" inputActions="_1Y9XBDCEEey7T5h0h40U1Q" relations="_1u6_8DCEEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <refinement xsi:type="cofluent:Behavior" xmi:id="_1Y9XADCEEey7T5h0h40U1Q" name="ConsumerBh" firstStatement="_1Y9XATCEEey7T5h0h40U1Q">
+        <statements xsi:type="cofluent:Operation" xmi:id="_1Y9XATCEEey7T5h0h40U1Q" name="init" isFirstOf="_1Y9XADCEEey7T5h0h40U1Q" next="_1Y9XAjCEEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:LoopStatement" xmi:id="_1Y9XAjCEEey7T5h0h40U1Q" name="Loop" firstStatement="_1Y9XBDCEEey7T5h0h40U1Q" lastStatement="_1Y9XAzCEEey7T5h0h40U1Q" previous="_1Y9XATCEEey7T5h0h40U1Q" condition=""/>
+        <statements xsi:type="cofluent:Operation" xmi:id="_1Y9XAzCEEey7T5h0h40U1Q" name="consume" isLastOf="_1Y9XAjCEEey7T5h0h40U1Q" previous="_1Y9XBDCEEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:InputAction" xmi:id="_1Y9XBDCEEey7T5h0h40U1Q" name="InAction" isFirstOf="_1Y9XAjCEEey7T5h0h40U1Q" next="_1Y9XAzCEEey7T5h0h40U1Q" port="_2cqPsDCEEey7T5h0h40U1Q" timeout=" ns" priority="" duration=" ns" vectorSize="" blocking="true" condition=""/>
+      </refinement>
+    </models>
+    <relations xsi:type="cofluent:MessageQueue" xmi:id="_1u6_8DCEEey7T5h0h40U1Q" name="MsgQ" ports="_2L7FADCEEey7T5h0h40U1Q _2cqPsDCEEey7T5h0h40U1Q" capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" address="" mask="" messageQueueType="STANDARD">
+      <relationType xsi:type="cofluent:RelationPredefinedType" xmi:id="_1u7nADCEEey7T5h0h40U1Q"/>
+    </relations>
+  </refinement>
+</cofluent:Application>

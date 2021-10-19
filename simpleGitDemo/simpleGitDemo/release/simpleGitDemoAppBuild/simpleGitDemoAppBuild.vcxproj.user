@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Intel(R) CoFluent(TM) Studio - Intel Corporation
+C++ Modeling Library for SystemC/TLM2 (SCL)
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--cf-gui-connect=yes --cf-gui-socket=40000 --cf-gui-time-scale=ns --cf-sim-duration=&quot;1.0 us&quot; --cf-verbosity=info --cf-lic-location=&quot;28518@idt02p.elic.intel.com&quot; --cf-default-path=$(TargetDir)</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>--cf-gui-connect=yes --cf-gui-socket=40000 --cf-gui-time-scale=ns --cf-sim-duration=&quot;1.0 us&quot; --cf-verbosity=info --cf-lic-location=&quot;28518@idt02p.elic.intel.com&quot; --cf-default-path=$(TargetDir)</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

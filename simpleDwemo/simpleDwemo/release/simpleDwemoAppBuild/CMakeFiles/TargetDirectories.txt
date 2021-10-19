@@ -1,3 +1,0 @@
-C:/IntelCoFluentStudio_v8.1.0/workspace/simpleDwemo/simpleDwemo/release/simpleDwemoAppBuild/CMakeFiles/simpleDwemoApp.dir
-C:/IntelCoFluentStudio_v8.1.0/workspace/simpleDwemo/simpleDwemo/release/simpleDwemoAppBuild/CMakeFiles/edit_cache.dir
-C:/IntelCoFluentStudio_v8.1.0/workspace/simpleDwemo/simpleDwemo/release/simpleDwemoAppBuild/CMakeFiles/rebuild_cache.dir

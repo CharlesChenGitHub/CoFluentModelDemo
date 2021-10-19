@@ -1,6 +1,0 @@
-set(CMAKE_RC_COMPILER "C:/IntelCoFluentStudio_v8.1.0/plugins/com.cofluent.studio.mingw_8.1.0.52/mingw-gcc-9.2.0/bin/windres.exe")
-set(CMAKE_RC_COMPILER_ARG1 "")
-set(CMAKE_RC_COMPILER_LOADED 1)
-set(CMAKE_RC_SOURCE_FILE_EXTENSIONS rc;RC)
-set(CMAKE_RC_OUTPUT_EXTENSION .obj)
-set(CMAKE_RC_COMPILER_ENV_VAR "RC")

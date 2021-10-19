@@ -1,1 +1,0 @@
-  -LC:/IntelCoFluentStudio_v8.1.0/plugins/com.cofluent.studio.scl.accellera_8.1.0.52/lib/mingw-gcc-9.2.0  -LC:/IntelCoFluentStudio_v8.1.0/plugins/com.cofluent.studio.mingw_8.1.0.52  -lcofscl -lsystemc -lcoflm -lws2_32 -llmgr11 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

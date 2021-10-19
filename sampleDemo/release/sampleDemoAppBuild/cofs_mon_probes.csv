@@ -1,0 +1,4 @@
+component_name,component_type,probe_configuration
+/sampleDemoApp/Producer,FUNCTION,MON_STATE_ONLY
+/sampleDemoApp/MsgQ,MESSAGE_QUEUE,MON_STATE_ONLY
+/sampleDemoApp/Consumer,FUNCTION,MON_STATE_ONLY

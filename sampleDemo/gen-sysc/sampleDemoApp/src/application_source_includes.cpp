@@ -1,0 +1,6 @@
+#include "cfm_consumer.cpp"
+#include "cfm_producer.cpp"
+#include "cfm_sampledemoapp.cpp"
+#include "cfm_sampledemoapp_global.cpp"
+#include "cfm_sampledemoapp_top.cpp"
+#include "cfm_sampledemoapp_user.cpp"

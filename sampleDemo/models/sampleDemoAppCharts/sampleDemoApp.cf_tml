@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<charts:TimelineChart xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:charts="http://cofluent.intel.com/charts/1.0.0" xmlns:cofluent="http://cofluent.intel.com/cofluent/1.0.0" rangeTime="false" locked="false" zoomRange="false" fillColor="-1" captionPosition="SOUTH" grid="false" cursor="true" enableTracking="false">
+  <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
+    <element xsi:type="cofluent:Function" href="../sampleDemoApp.cf_app#_iUnScDB7Eeymkp2fS7zgXQ"/>
+  </probes>
+  <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
+    <element xsi:type="cofluent:MessageQueue" href="../sampleDemoApp.cf_app#_i3jAYDB7Eeymkp2fS7zgXQ"/>
+  </probes>
+  <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
+    <element xsi:type="cofluent:Function" href="../sampleDemoApp.cf_app#_imo2kDB7Eeymkp2fS7zgXQ"/>
+  </probes>
+  <model xsi:type="cofluent:Application" href="../sampleDemoApp.cf_app#_hWlj8DB7Eeymkp2fS7zgXQ"/>
+</charts:TimelineChart>

@@ -20,15 +20,19 @@ using namespace cf_core;
 /// \name constructor
 //@{
 cfm_simplegitdemoapp::cfm_simplegitdemoapp(sc_core::sc_module_name name) :
-		cf_application(name), mq_MsgQ("MsgQ") {
+		cf_application(name), mq_MsgQ("MsgQ"), mq_MsgQ2("MsgQ2") {
 	cf_application::init();
 
 	Consumer = new cfm_consumer("Consumer");
 
+	ProcessingFunction = new cfm_processingfunction("ProcessingFunction");
+
 	Producer = new cfm_producer("Producer");
 
 	// connections
-	Consumer->p_mq_MsgQ(mq_MsgQ.p_target_socket);
+	Consumer->p_mq_MsgQ2(mq_MsgQ2.p_target_socket);
+	ProcessingFunction->p_mq_MsgQ(mq_MsgQ.p_target_socket);
+	ProcessingFunction->p_mq_MsgQ2(mq_MsgQ2.p_target_socket);
 	Producer->p_mq_MsgQ(mq_MsgQ.p_target_socket);
 
 	//<#!@READ-ONLY-SECTION-END@!#>
@@ -50,6 +54,7 @@ cfm_simplegitdemoapp::~cfm_simplegitdemoapp(void) {
 	//End of 'simpleGitDemoApp destructor' algorithm generated code
 	//<#!@READ-ONLY-SECTION-START@!#>
 	delete Consumer;
+	delete ProcessingFunction;
 	delete Producer;
 }
 //@}
@@ -103,6 +108,13 @@ void cfm_simplegitdemoapp::cb_init_attributes() {
 	mq_MsgQ.cfa_concurrency.init((cf_nonzero_count) 1);
 	mq_MsgQ.cfa_send_threshold.init((cf_nonzero_count) 1);
 	mq_MsgQ.cfa_receive_threshold.init((cf_nonzero_count) 1);
+	mq_MsgQ2.cfa_send_time.init(cf_expr_duration(1, CF_NS));
+	mq_MsgQ2.cfa_receive_time.init(cf_expr_duration(1, CF_NS));
+	mq_MsgQ2.cfa_queue_policy.init(CF_MQ_POLICY_FIFO_FINITE);
+	mq_MsgQ2.cfa_queue_capacity.init((cf_nonzero_count) 1);
+	mq_MsgQ2.cfa_concurrency.init((cf_nonzero_count) 1);
+	mq_MsgQ2.cfa_send_threshold.init((cf_nonzero_count) 1);
+	mq_MsgQ2.cfa_receive_threshold.init((cf_nonzero_count) 1);
 
 	return;
 }

@@ -29,7 +29,7 @@ public:
 
 	/// ports typedef
 	typedef cf_core::cf_mq_initiator_socket<cfm_consumer,
-			cf_core::cf_payload_int> p_mq_MsgQ_t;
+			cf_core::cf_payload_int> p_mq_MsgQ2_t;
 
 	/// constructor
 	cfm_consumer(sc_core::sc_module_name name);
@@ -42,7 +42,7 @@ public:
 public:
 	/// \name input/output ports
 	//@{
-	p_mq_MsgQ_t p_mq_MsgQ;
+	p_mq_MsgQ2_t p_mq_MsgQ2;
 	//@}
 
 protected:
@@ -68,8 +68,8 @@ protected:
 private:
 	/// \name input/output local buffers
 	//@{
-	int MsgQ;
-	cf_core::cf_payload_int MsgQ_trans;
+	int MsgQ2;
+	cf_core::cf_payload_int MsgQ2_trans;
 	//@}
 
 	/// \name user-defined local declarations

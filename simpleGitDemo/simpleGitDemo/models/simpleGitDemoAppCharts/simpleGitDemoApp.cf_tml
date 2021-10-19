@@ -4,7 +4,13 @@
     <element xsi:type="cofluent:Function" href="../simpleGitDemoApp.cf_app#_03qAwDCEEey7T5h0h40U1Q"/>
   </probes>
   <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
-    <element xsi:type="cofluent:MessageQueue" href="../simpleGitDemoApp.cf_app#_1u6_8DCEEey7T5h0h40U1Q"/>
+    <element xsi:type="cofluent:MessageQueue" href="../simpleGitDemoApp.cf_app#_Z7PoMDCFEey7T5h0h40U1Q"/>
+  </probes>
+  <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
+    <element xsi:type="cofluent:Function" href="../simpleGitDemoApp.cf_app#_ZpvogDCFEey7T5h0h40U1Q"/>
+  </probes>
+  <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
+    <element xsi:type="cofluent:MessageQueue" href="../simpleGitDemoApp.cf_app#_aDsZkDCFEey7T5h0h40U1Q"/>
   </probes>
   <probes xsi:type="charts:StaticProbe" messageCount="true" showProcessor="false">
     <element xsi:type="cofluent:Function" href="../simpleGitDemoApp.cf_app#_1Y7h0DCEEey7T5h0h40U1Q"/>

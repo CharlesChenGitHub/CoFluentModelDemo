@@ -13,6 +13,7 @@
 #include "cofluent.h"
 
 #include "cfm_consumer.h"
+#include "cfm_processingfunction.h"
 #include "cfm_producer.h"
 
 //<#!@READ-ONLY-SECTION-END@!#>
@@ -30,6 +31,7 @@ class cfm_simplegitdemoapp: public cf_core::cf_application {
 public:
 	/// relations typedef
 	typedef cf_core::cf_message_queue<cf_core::cf_payload_int> mq_MsgQ_t;
+	typedef cf_core::cf_message_queue<cf_core::cf_payload_int> mq_MsgQ2_t;
 
 	/// constructor
 	cfm_simplegitdemoapp(sc_core::sc_module_name name);
@@ -45,6 +47,7 @@ public:
 	/// \name functions
 	//@{
 	cfm_consumer* Consumer;
+	cfm_processingfunction* ProcessingFunction;
 	cfm_producer* Producer;
 	//@}
 
@@ -58,6 +61,7 @@ public:
 	/// \name relations
 	//@{
 	mq_MsgQ_t mq_MsgQ;
+	mq_MsgQ2_t mq_MsgQ2;
 	//@}
 
 	/// \name user-defined local declarations

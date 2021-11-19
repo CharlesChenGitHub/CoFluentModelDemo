@@ -25,6 +25,8 @@
 ///
 ///    - \subpage dxpConsumer "Function Consumer"
 ///
+///    - \subpage dxpProcessingFunction "Function ProcessingFunction"
+///
 ///
 /// Intel(R) CoFluent(TM) Studio - Intel Corporation
 /// Version: 8.1.0 r1_nolic - Build id: 52-52

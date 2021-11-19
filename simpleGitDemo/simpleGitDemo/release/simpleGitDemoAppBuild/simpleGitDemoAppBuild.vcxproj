@@ -54,7 +54,7 @@ C++ Modeling Library for SystemC/TLM2 (SCL)
     <ClCompile>
       <AdditionalOptions>/W3 /GR /Zm200 /vmg /TP /Gy  %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>"_CONSOLE";WIN32="WIN32";_CRT_SECURE_NO_WARNINGS=_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=_CRT_SECURE_NO_DEPRECATE;BOOST_AUTO_LINK_TAGGED=BOOST_AUTO_LINK_TAGGED;COFS_MODEL_TYPE_APPLICATION_MODELING=COFS_MODEL_TYPE_APPLICATION_MODELING;COFS_SOURCE_CODEGEN_SYSTEMC=COFS_SOURCE_CODEGEN_SYSTEMC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -88,7 +88,7 @@ C++ Modeling Library for SystemC/TLM2 (SCL)
       <AdditionalOptions>/W3 /GR /Zm200 /vmg /TP /Gy  %(AdditionalOptions)</AdditionalOptions>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\cofluent;C:\IntelCoFluentStudio_v8.1.0\plugins\com.cofluent.studio.scl.core_8.1.0.52\include\systemc;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>"_CONSOLE";WIN32="WIN32";_CRT_SECURE_NO_WARNINGS=_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=_CRT_SECURE_NO_DEPRECATE;BOOST_AUTO_LINK_TAGGED=BOOST_AUTO_LINK_TAGGED;COFS_MODEL_TYPE_APPLICATION_MODELING=COFS_MODEL_TYPE_APPLICATION_MODELING;COFS_SOURCE_CODEGEN_SYSTEMC=COFS_SOURCE_CODEGEN_SYSTEMC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -120,16 +120,17 @@ C++ Modeling Library for SystemC/TLM2 (SCL)
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\src\application_source_includes.cpp" />
+    <ClCompile Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\src\application_source_includes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_consumer.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_producer.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global_types.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_top.h" />
-    <ClInclude Include="C:\IntelCoFluentStudio_v8.1.0\workspace\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_user.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_consumer.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_processingfunction.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_producer.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_global_types.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_top.h" />
+    <ClInclude Include="C:\Users\qianche1\git\CoFluentModelDemo\simpleGitDemo\simpleGitDemo\gen-sysc\simpleGitDemoApp\include\cfm_simplegitdemoapp_user.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

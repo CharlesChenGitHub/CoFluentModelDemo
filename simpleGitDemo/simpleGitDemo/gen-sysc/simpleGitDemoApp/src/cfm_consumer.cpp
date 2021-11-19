@@ -28,7 +28,7 @@ using namespace cf_core;
 /// \name constructor
 //@{
 cfm_consumer::cfm_consumer(sc_core::sc_module_name name) :
-		cf_function(name), p_mq_MsgQ("p_mq_MsgQ"), consume("consume"), init(
+		cf_function(name), p_mq_MsgQ2("p_mq_MsgQ2"), consume("consume"), init(
 				"init") {
 	cf_function::init();
 
@@ -130,7 +130,7 @@ void cfm_consumer::cfm_behavior() {
 	behavior_initialize();
 
 	// transaction initialization
-	MsgQ_trans.set_data_ptr(&MsgQ);
+	MsgQ2_trans.set_data_ptr(&MsgQ2);
 
 	// run init
 	run_operation (init);
@@ -138,7 +138,7 @@ void cfm_consumer::cfm_behavior() {
 	while (1) {
 
 		// input action InAction
-		p_mq_MsgQ.receive(&MsgQ_trans);
+		p_mq_MsgQ2.receive(&MsgQ2_trans);
 
 		// run consume
 		run_operation (consume);

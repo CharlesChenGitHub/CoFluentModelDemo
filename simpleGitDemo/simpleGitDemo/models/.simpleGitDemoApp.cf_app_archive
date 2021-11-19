@@ -5,7 +5,7 @@
   </annotations>
   <refinement xsi:type="cofluent:Structure" xmi:id="_zwKNMTCEEey7T5h0h40U1Q" name="simpleGitDemoAppSt">
     <models xsi:type="cofluent:Function" xmi:id="_03qAwDCEEey7T5h0h40U1Q" name="Producer" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
-      <ports xmi:id="_2L7FADCEEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="OUT" outputActions="_03trJDCEEey7T5h0h40U1Q" relations="_1u6_8DCEEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+      <ports xmi:id="_2L7FADCEEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="OUT" outputActions="_03trJDCEEey7T5h0h40U1Q" relations="_Z7PoMDCFEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
         <constructorArguments></constructorArguments>
         <templateArguments></templateArguments>
       </ports>
@@ -17,7 +17,7 @@
       </refinement>
     </models>
     <models xsi:type="cofluent:Function" xmi:id="_1Y7h0DCEEey7T5h0h40U1Q" name="Consumer" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
-      <ports xmi:id="_2cqPsDCEEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="IN" inputActions="_1Y9XBDCEEey7T5h0h40U1Q" relations="_1u6_8DCEEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+      <ports xmi:id="_2cqPsDCEEey7T5h0h40U1Q" name="MsgQ2" type="MESSAGE_QUEUE" direction="IN" inputActions="_1Y9XBDCEEey7T5h0h40U1Q" relations="_aDsZkDCFEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
         <constructorArguments></constructorArguments>
         <templateArguments></templateArguments>
       </ports>
@@ -28,8 +28,28 @@
         <statements xsi:type="cofluent:InputAction" xmi:id="_1Y9XBDCEEey7T5h0h40U1Q" name="InAction" isFirstOf="_1Y9XAjCEEey7T5h0h40U1Q" next="_1Y9XAzCEEey7T5h0h40U1Q" port="_2cqPsDCEEey7T5h0h40U1Q" timeout=" ns" priority="" duration=" ns" vectorSize="" blocking="true" condition=""/>
       </refinement>
     </models>
-    <relations xsi:type="cofluent:MessageQueue" xmi:id="_1u6_8DCEEey7T5h0h40U1Q" name="MsgQ" ports="_2L7FADCEEey7T5h0h40U1Q _2cqPsDCEEey7T5h0h40U1Q" capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" address="" mask="" messageQueueType="STANDARD">
-      <relationType xsi:type="cofluent:RelationPredefinedType" xmi:id="_1u7nADCEEey7T5h0h40U1Q"/>
+    <models xsi:type="cofluent:Function" xmi:id="_ZpvogDCFEey7T5h0h40U1Q" name="ProcessingFunction" cyclePeriod=" ns" affinity="" priority="0" schedulingPolicy="FIFO" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" coSimulationType="NONE_COSIM">
+      <ports xmi:id="_cl_XMDCFEey7T5h0h40U1Q" name="MsgQ" type="MESSAGE_QUEUE" direction="IN" inputActions="_ZpyExDCFEey7T5h0h40U1Q" relations="_Z7PoMDCFEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <ports xmi:id="_c5mPsDCFEey7T5h0h40U1Q" name="MsgQ2" type="MESSAGE_QUEUE" direction="OUT" outputActions="_ZpyExTCFEey7T5h0h40U1Q" relations="_aDsZkDCFEey7T5h0h40U1Q" size="" synchronizeName="true" vector="false" requestPipelineDepth="1">
+        <constructorArguments></constructorArguments>
+        <templateArguments></templateArguments>
+      </ports>
+      <refinement xsi:type="cofluent:Behavior" xmi:id="_ZpyEwDCFEey7T5h0h40U1Q" name="ProcessingFunctionBh" firstStatement="_ZpyEwTCFEey7T5h0h40U1Q">
+        <statements xsi:type="cofluent:Operation" xmi:id="_ZpyEwTCFEey7T5h0h40U1Q" name="init" isFirstOf="_ZpyEwDCFEey7T5h0h40U1Q" next="_ZpyEwjCFEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:LoopStatement" xmi:id="_ZpyEwjCFEey7T5h0h40U1Q" name="Loop" firstStatement="_ZpyExDCFEey7T5h0h40U1Q" lastStatement="_ZpyExTCFEey7T5h0h40U1Q" previous="_ZpyEwTCFEey7T5h0h40U1Q" condition=""/>
+        <statements xsi:type="cofluent:Operation" xmi:id="_ZpyEwzCFEey7T5h0h40U1Q" name="process" previous="_ZpyExDCFEey7T5h0h40U1Q" next="_ZpyExTCFEey7T5h0h40U1Q" executionTime="10 ns" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" dynamicResourceLoad=""/>
+        <statements xsi:type="cofluent:InputAction" xmi:id="_ZpyExDCFEey7T5h0h40U1Q" name="InAction" isFirstOf="_ZpyEwjCFEey7T5h0h40U1Q" next="_ZpyEwzCFEey7T5h0h40U1Q" port="_cl_XMDCFEey7T5h0h40U1Q" timeout=" ns" priority="" duration=" ns" vectorSize="" blocking="true" condition=""/>
+        <statements xsi:type="cofluent:OutputAction" xmi:id="_ZpyExTCFEey7T5h0h40U1Q" name="OutAction" isLastOf="_ZpyEwjCFEey7T5h0h40U1Q" previous="_ZpyEwzCFEey7T5h0h40U1Q" port="_c5mPsDCFEey7T5h0h40U1Q" duration=" ns" condition="" priority="" vectorSize="" blocking="true" call=""/>
+      </refinement>
+    </models>
+    <relations xsi:type="cofluent:MessageQueue" xmi:id="_Z7PoMDCFEey7T5h0h40U1Q" name="MsgQ" ports="_cl_XMDCFEey7T5h0h40U1Q _2L7FADCEEey7T5h0h40U1Q" capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" address="" mask="" messageQueueType="STANDARD">
+      <relationType xsi:type="cofluent:RelationPredefinedType" xmi:id="_Z7PoMTCFEey7T5h0h40U1Q"/>
+    </relations>
+    <relations xsi:type="cofluent:MessageQueue" xmi:id="_aDsZkDCFEey7T5h0h40U1Q" name="MsgQ2" ports="_c5mPsDCFEey7T5h0h40U1Q _2cqPsDCEEey7T5h0h40U1Q" capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" address="" mask="" messageQueueType="STANDARD">
+      <relationType xsi:type="cofluent:RelationPredefinedType" xmi:id="_aDsZkTCFEey7T5h0h40U1Q"/>
     </relations>
   </refinement>
 </cofluent:Application>

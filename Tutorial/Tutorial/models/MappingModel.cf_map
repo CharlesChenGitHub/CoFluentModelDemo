@@ -17,7 +17,7 @@
     <dataPaths xmi:id="_dwiSMpk8EeulYLtTcSgq6A" relationInstance="_3MoUgSG_EeaaOsqBPt_qWw"/>
     <dataPaths xmi:id="_dwiSM5k8EeulYLtTcSgq6A" relationInstance="_3MoUgiG_EeaaOsqBPt_qWw"/>
     <dataPaths xmi:id="_dwiSNJk8EeulYLtTcSgq6A" relationInstance="_3MoUgyG_EeaaOsqBPt_qWw"/>
-    <destination xsi:type="cofluent:Scheduler" href="PlatformModel.cf_plf#_MbPWYCG3EeaaOsqBPt_qWw"/>
+    <destination xsi:type="cofluent:Processor" href="PlatformModel.cf_plf#_kay8QCG2EeaaOsqBPt_qWw"/>
   </pairs>
   <pairs xmi:id="_6Fn64CG_EeaaOsqBPt_qWw" sourceInstance="_3MoUgCG_EeaaOsqBPt_qWw">
     <dataPaths xmi:id="_dwiSNZk8EeulYLtTcSgq6A" relationInstance="_3MoUhSG_EeaaOsqBPt_qWw">

@@ -1,0 +1,5 @@
+component_name,design_parameter_name,value
+/ApplicationModel,DataSize,200
+/ApplicationModel,ErrorRate,0
+/ApplicationModel,Frequency,0.5 Hz
+/ApplicationModel,NoiseLevel,0
